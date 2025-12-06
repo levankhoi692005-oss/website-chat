@@ -1,0 +1,50 @@
+   body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: white;
+      font-family: Arial, sans-serif;
+    }
+    .signup-form {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    }
+    input {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff6600;
+      border: none;
+      border-radius: 999px;
+      color: white;
+      padding: 10px 30px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background-color: #e55a00;
+    }
+    .link {
+      display: block;
+      margin-top: 15px;
+      color: #ff6600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+    .dangky-thanhcong {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}

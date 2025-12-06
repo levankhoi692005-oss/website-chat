@@ -1,0 +1,37 @@
+<!-- information.html -->
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thông tin cá nhân</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/information.css') }}">
+</head>
+<body>
+<div class="information">
+    <h1>Nhập thông tin cá nhân</h1>
+
+    <form id="infoForm">
+        <div>
+            <label for="fullname">Họ và tên:</label>
+            <input type="text" id="fullname" placeholder="Nhập họ và tên" required>
+
+            <label for="birthday">Ngày sinh:</label>
+            <input type="date" id="birthday" required>
+
+            <label for="gender">Giới tính:</label>
+            <select id="gender">
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+            </select>
+
+            <button type="submit">Lưu thông tin</button>
+        </div>
+    </form>
+</div>
+<script src="/static/js/information.js"></script>
+</body>
+</html>

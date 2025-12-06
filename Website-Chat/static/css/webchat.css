@@ -1,0 +1,72 @@
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url('/static/img/anh1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        position: relative;
+        text-align: center;
+        color: white;
+
+    }
+
+
+.webchat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+/* Tiêu đề lớn */
+.webchat h1 {
+  font-size: 7vh;
+  color: black;
+  display: inline-block;
+  white-space: nowrap;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* Đổ bóng chữ */
+}
+
+/* Dòng mô tả */
+.webchat h2 {
+  font-size: 20px;
+  color: black;
+  display: inline-block;
+  white-space: nowrap;
+  height: 3vh;
+}
+
+/* Nút bấm */
+   .signinup .signin-button{
+    position: fixed;
+    top: 13px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signinup .signup-button{
+    position: fixed;
+    top: 13px;
+    right: 150px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signinup .signup-button:hover,
+.signinup .signin-button:hover{
+  background-color: #0099CC;
+}

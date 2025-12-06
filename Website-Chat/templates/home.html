@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Chat</title>
+    <link rel="stylesheet" href="static/css/home.css">
+</head>
+<body>
+<div class="home-container">
+    <div class="sidebar">
+        <div class="logo">ChatApp</div>
+        <div class="user-info">
+            <div class="avatar"></div>
+            <div>
+                <p class="username">{{username}}</p>
+                <p class="userid">ID: {{user_id}}</p>
+            </div>
+        </div>
+        <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        <div class="search-chat">
+            <input type="text" placeholder="Nhập ID để chat 1-1" id="searchInput">
+            <button id="searchBtn">🔍</button>
+        </div>
+
+        <ul class="chat-list" id="chatList">
+            <li class="chat-item active"
+                data-name="Chat tổng"
+                data-avatar="https://img.icons8.com/color/48/000000/group-chat.png">
+                <div class="chat-avatar" style="background-image:url('https://img.icons8.com/color/48/000000/group-chat.png')"></div>
+                <span>Chat tổng</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-chat">
+        <div class="chat-header" id="chatHeader">
+
+            <div class="header-avatar" id="chatHeaderAvatar"
+                 style="background-image:url('https://img.icons8.com/color/48/000000/group-chat.png')"></div>
+            <span id="chatHeaderName">Chat tổng</span>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message">Chào mừng bạn đến ChatApp!</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Nhập tin nhắn...">
+            <div class="chat-actions">
+                <button id="sendBtn"></button>
+                <input type="file" id="fileInput" style="display:none">
+                <button id="fileBtn"></button>
+                <button id="emojiBtn"></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const CURRENT_USER_ID = "{{user_id}}";
+    const CURRENT_FULLNAME = "{{fullname}}";
+
+</script>
+
+</script>
+
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js" crossorigin="anonymous"></script>
+<script src="/static/js/home/main.js"></script>
+<script src="/static/js/home/room.js"></script>
+<script src="/static/js/home/socket.js"></script>
+<script src="/static/js/home/search.js"></script>
+<script src="/static/js/home/file.js"></script>
+<script src="/static/js/home/ui.js"></script>
+<script src="/static/js/home/logout.js"></script>
+</body>
+</html>

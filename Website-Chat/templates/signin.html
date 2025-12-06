@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+</head>
+<body>
+
+  <div class="signin-box">
+    <h2>LOG IN</h2>
+
+    <form action="#" method="POST" onsubmit="return handleLogin(event)">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="error" id="errorMsg"></div>
+
+    <div class="link">
+      <span>Don't have an account?
+        <a href="{{ url_for('signup') }}">Sign up</a>
+      </span>
+    </div>
+  </div>
+  <script>
+  const homeUrl = "{{ url_for('home') }}";
+  const infoUrl = "{{ url_for('information') }}";
+</script>
+<script src="/static/js/signin.js"></script>
+</body>
+</html>
